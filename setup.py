@@ -1,4 +1,4 @@
-"""Python setup.py for project_name package"""
+"""Python setup.py for python_image_enjoy package"""
 import io
 import os
 from setuptools import find_packages, setup
@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 
 def read(*paths, **kwargs):
     """Read the contents of a text file safely.
-    >>> read("project_name", "VERSION")
+    >>> read("python_image_enjoy", "VERSION")
     '0.1.0'
     >>> read("README.md")
     ...
@@ -30,17 +30,17 @@ def read_requirements(path):
 
 
 setup(
-    name="project_name",
-    version=read("project_name", "VERSION"),
-    description="project_description",
-    url="https://github.com/author_name/project_urlname/",
+    name="python_image_enjoy",
+    version=read("python_image_enjoy", "VERSION"),
+    description="Awesome python_image_enjoy created by HBAUWEN",
+    url="https://github.com/HBAUWEN/python_image_enjoy/",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
-    author="author_name",
+    author="HBAUWEN",
     packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
     entry_points={
-        "console_scripts": ["project_name = project_name.__main__:main"]
+        "console_scripts": ["python_image_enjoy = python_image_enjoy.__main__:main"]
     },
     extras_require={"test": read_requirements("requirements-test.txt")},
 )
